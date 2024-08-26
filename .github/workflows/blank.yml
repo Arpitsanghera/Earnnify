@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earnify</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Earnify</h1>
+        <nav>
+            <a href="sell.html">Sell Your Products</a>
+            <a href="subscriptions.html">Subscription Plans</a>
+            <a href="view-products.html">View Products</a>
+            <a href="payments.html">Payment Information</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Welcome to the Earnify!</h2>
+        <p>Your one-stop solution to sell products and make money.</p>
+    </main>
+
+    <footer>
+        <p>© 2024 Earnify. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Your Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Earnify</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="subscriptions.html">Subscription Plans</a>
+            <a href="view-products.html">View Products</a>
+            <a href="payments.html">Payment Information</a>
+        </nav>
+    </header>
+
+    <section id="sell">
+        <h2>Sell Your Products</h2>
+        <form id="productForm">
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" required>
+
+            <label for="productDescription">Product Description:</label>
+            <textarea id="productDescription" required></textarea>
+
+            <label for="productImage">Upload Image:</label>
+            <input type="file" id="productImage" accept="image/*" required>
+
+            <label for="productPrice">Product Price ($):</label>
+            <input type="number" id="productPrice" required>
+
+            <button type="submit">Post Product</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Earnify. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products for Sale</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Earnify</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="sell.html">Sell Your Products</a>
+            <a href="subscriptions.html">Subscription Plans</a>
+            <a href="payments.html">Payment Information</a>
+        </nav>
+    </header>
+
+    <section id="view-products">
+        <h2>Products for Sale</h2>
+        <div id="productList"></div> <!-- Container for displaying products -->
+    </section>
+
+    <footer>
+        <p>© 2024 Earnify. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Plans</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Earnify</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="sell.html">Sell Your Products</a>
+            <a href="view-products.html">View Products</a>
+            <a href="payments.html">Payment Information</a>
+        </nav>
+    </header>
+
+    <section id="subscriptions">
+        <h2>Subscription Plans</h2>
+        <div class="subscription-plan">
+            <h3>Basic Plan</h3>
+            <p>$20/month - 12% Commission</p>
+            <button>Subscribe</button>
+        </div>
+        <div class="subscription-plan">
+            <h3>Standard Plan</h3>
+            <p>$30/month - 10% Commission</p>
+            <button>Subscribe</button>
+        </div>
+        <div class="subscription-plan">
+            <h3>Premium Plan</h3>
+            <p>$40/month - 8% Commission</p>
+            <button>Subscribe</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Earnify. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Earnify</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="sell.html">Sell Your Products</a>
+            <a href="view-products.html">View Products</a>
+            <a href="subscriptions.html">Subscription Plans</a>
+        </nav>
+    </header>
+
+    <section id="payments">
+        <h2>Payment Information</h2>
+        <form id="paymentForm">
+            <label for="bankInfo">Bank Information:</label>
+            <input type="text" id="bankInfo" required>
+            <button type="submit">Save Payment Info</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Earnify. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.subscription-plan {
+    background-color: #e0e0e0;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.subscription-plan h3 {
+    margin: 0;
+}
+
+.product-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+const products = [];
+
+// Handle product submission
+document.getElementById('productForm')?.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const productName = document.getElementById('productName').value;
+    const productDescription = document.getElementById('productDescription').value;
+    const productImage = document.getElementById('productImage').files[0];
+    const productPrice = document.getElementById('productPrice').value;
+
+    const product = {
+        name: productName,
+        description: productDescription,
+        price: productPrice,
+        image: URL.createObjectURL(productImage) // Create URL for the uploaded image
+    };
+
+    products.push(product);
+
+    alert('Product posted successfully!');
+
+    // Clear form
+    this.reset();
+});
+
+// Display products on the View Products page
+if (document.getElementById('productList')) {
+    const productList = document.getElementById('productList');
+    products.forEach((product) => {
+        const productItem = document.createElement('div');
+        productItem.className = 'product-item';
+        productItem.innerHTML = `
+            <h3>${product.name}</h3>
+            <p>${product.description}</p>
+            <p>Price: $${product.price}</p>
+            <img src="${product.image}" alt="${product.name}" style="width:100px;height:auto;">
+        `;
+        productList.appendChild(productItem);
+    });
+}
+
